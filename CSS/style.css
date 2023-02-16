@@ -11,6 +11,14 @@ body {
 	text-align: center;
 }
 
+.error {
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 15%;
+	text-align: center;
+	height: 20%;
+}
+
 h1 {
 	font-family: "Roboto";
 	font-weight: 700;
@@ -25,11 +33,45 @@ p {
 	color: rgb(29, 29, 29);
 }
 
+.error-code {
+	font-size: 150px;
+	margin-bottom: 1%;
+}
+
+h2 {
+	font-family: "Roboto";
+	font-weight: 700;
+	color: rgb(29, 29, 29);
+	margin-bottom: 10%;
+	font-size: 40px;
+	margin-top: -2%;
+}
+
 .logo {
 	height: 3vh;
 	width: 3vh;
 	margin-left: 2px;
 	text-decoration: none;
+}
+
+.goback {
+	font-family: "Roboto";
+	font-weight: 700;
+	color: rgb(240, 240, 240);
+	background-color: rgb(29, 29, 29);
+	width: 20%;
+	min-height: 20%;
+	border-radius: 10px;
+	box-sizing: border-box;
+	margin-left: 40%;
+	padding-bottom: 2px;
+}
+
+.goback-home {
+	font-family: "Roboto";
+	font-weight: 700;
+	color: rgb(240, 240, 240);
+	text-align: center;
 }
 
 a:link {
