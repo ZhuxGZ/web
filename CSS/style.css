@@ -29,4 +29,9 @@ p {
 	height: 3vh;
 	width: 3vh;
 	margin-left: 10px;
+	text-decoration: none;
+}
+
+a:link {
+	text-decoration: none;
 }
