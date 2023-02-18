@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;700&display=swap");
+
+body {
+	background-color: rgb(240, 240, 240);
+	font-family: "Roboto";
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin-top: 20%;
+	color: rgb(29, 29, 29);
+}
+
+h1 {
+	margin-bottom: 0px;
+	font-size: 150pt;
+}
+h3 {
+	margin-top: -20px;
+	margin-bottom: 0px;
+	font-size: 30pt;
+}
+
+.button {
+	margin-top: 0px;
+	height: 100px;
+	width: 100%;
+	margin-left: 25%;
+}
+
+a h4 {
+	box-sizing: border-box;
+	padding: 10px;
+	width: 200px;
+	height: 40px;
+	color: rgb(240, 240, 240);
+	background-color: rgb(29, 29, 29);
+	border-radius: 10px;
+}
+
+a:link {
+	text-decoration: none;
+	color: rgb(240, 240, 240);
+}
+
+@media (min-width: 600px) {
+	.button {
+		margin-left: 35%;
+	}
+}
+
+@media (min-width: 1000px) {
+	.button {
+		margin-left: 40%;
+	}
+}

@@ -2,36 +2,43 @@
 
 body {
 	background-color: rgb(240, 240, 240);
+	font-family: "Roboto";
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
 }
 
-.coming {
+ul li {
+	list-style: none;
+}
+
+.skills {
 	width: 100%;
-	margin: 0 auto;
-	margin-top: 25%;
+	display: flex;
+}
+
+.skills .tech {
+	margin-left: 2%;
+	width: 50%;
+}
+
+.projects {
+	display: flex;
+	width: 100%;
+}
+
+.simple-calc,
+.taskmanager {
+	width: 50%;
 	text-align: center;
 }
 
-h1 {
-	font-family: "Roboto";
-	font-weight: 700;
-	color: rgb(29, 29, 29);
-	margin-bottom: 0px;
+/* Footer */
+
+footer {
+	margin-top: auto;
 }
 
-p {
-	margin-top: 0px;
-	font-family: "Roboto";
-	font-weight: 400;
-	color: rgb(29, 29, 29);
-}
-
-.logo {
-	height: 3vh;
-	width: 3vh;
-	margin-left: 10px;
-	text-decoration: none;
-}
-
-a:link {
-	text-decoration: none;
+footer .footer {
+	text-align: center;
 }
