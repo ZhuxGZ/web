@@ -202,6 +202,45 @@ footer {
 	}
 }
 
+@media (min-width: 390px) {
+	header {
+		margin-bottom: 7%;
+	}
+
+	header img {
+		margin-left: 40%;
+		max-width: 20%;
+	}
+
+	.skills {
+		height: 25vh;
+	}
+
+	.projects {
+		height: 50vh;
+	}
+
+	.project {
+		margin-top: 5%;
+		height: 18vh;
+		width: 85%;
+		margin-left: 7.5%;
+	}
+
+	.contact h1 {
+		margin-top: 4%;
+		margin-bottom: 5%;
+	}
+
+	.redes {
+		margin-left: 25%;
+	}
+
+	.social img {
+		height: 2.5em;
+	}
+}
+
 @media (min-width: 500px) {
 	header {
 		margin-bottom: 7%;
