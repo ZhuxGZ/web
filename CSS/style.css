@@ -9,18 +9,27 @@ body {
 }
 
 header {
+	margin-top: 2em;
+	margin-bottom: 0em;
+	display: flex;
 	width: 100%;
-	height: 7%;
-	margin-bottom: 0%;
+	height: 12%;
+	justify-content: center;
+	align-items: center;
 }
 
 header img {
-	max-width: 20%;
-	margin-left: 40%;
+	max-width: 170px;
+	max-height: 250px;
+}
+
+header a {
+	max-width: 250px;
 }
 
 main {
 	margin: 5%;
+	margin-top: 0em;
 }
 
 a:link {
@@ -36,48 +45,56 @@ a:visited {
 }
 
 .skills {
-	padding-top: 5%;
 	color: rgb(29, 29, 29);
 	display: flex;
-	height: 25vh;
+	justify-content: center;
+	max-height: 20em;
 	width: 100%;
 	background: linear-gradient(130deg, rgba(159, 218, 229, 1) 0%, rgba(223, 164, 205, 1) 100%);
 	margin-bottom: 0;
 	border-radius: 20px;
-	box-sizing: border-box;
+	padding-top: 1.5em;
 }
 
 .skills h3 {
-	margin-bottom: 5%;
+	text-align: center;
+	margin-top: 0em;
+	margin-bottom: 0.7em;
 }
 
 ul {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	margin-top: 0;
 	list-style: none;
 	padding-left: 2%;
 }
 
 ul li {
-	margin-bottom: 3%;
+	margin-bottom: 0.7em;
 }
 
 .tech {
-	width: 50%;
-	margin-left: 10%;
+	min-height: 100%;
+	min-width: 50%;
 }
 
 .software {
-	margin-left: 5%;
-	width: 50%;
+	min-height: 100%;
+	min-width: 50%;
 }
 
 /* Projects */
 
 .projects {
-	margin-top: 5%;
-	padding-top: 2%;
+	display: flex;
+	flex-direction: column;
+	margin-top: 1.5em;
+	padding-top: 0em;
+	padding: 1em;
 	width: 100%;
-	height: 45vh;
+	min-height: 45vh;
 	color: rgb(29, 29, 29);
 	background: linear-gradient(-75deg, rgba(159, 218, 229, 1) 0%, rgba(223, 164, 205, 1) 100%);
 	border-radius: 20px;
@@ -85,20 +102,22 @@ ul li {
 }
 
 .projects h2 {
-	margin-left: 10%;
-	margin-bottom: 4%;
+	margin-top: 0em;
+	margin-bottom: 0.5em;
+	margin-left: 0.2em;
 }
 
 .project {
-	width: 80%;
-	margin-left: 10%;
+	display: flex;
+	min-width: 85%;
 	text-align: center;
 	border-radius: 10px;
 	background-position: center;
 	background-size: cover;
 	box-sizing: border-box;
-	padding-top: 10%;
-	height: 35%;
+	min-height: 10em;
+	align-items: center;
+	justify-content: center;
 }
 
 .calculator {
@@ -110,10 +129,13 @@ ul li {
 		url(../Photos/calculator.png);
 }
 
+.calculator a:visited {
+	color: rgb(240, 240, 240);
+}
+
 .taskmanager {
 	color: rgb(29, 29, 29);
-	padding-top: 10%;
-	margin-top: 5%;
+	margin-top: 1em;
 	height: 35%;
 	background-image: linear-gradient(
 			-15deg,
@@ -131,28 +153,30 @@ ul li {
 .contact {
 	width: 100%;
 	height: 10%;
-	margin-top: 5%;
+	margin-top: 1.5em;
 	background: linear-gradient(-75deg, rgba(159, 218, 229, 1) 0%, rgba(223, 164, 205, 1) 100%);
 	color: rgb(29, 29, 29);
 	border-radius: 10px;
-	height: 15vh;
-	text-align: center;
-	box-sizing: border-box;
-	padding-top: 0.2%;
+	height: 5.5em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
-.contact a {
-	margin-left: 5%;
+.contact h1 {
+	margin-top: 0em;
+	margin-bottom: 0.1em;
 }
 
 .redes {
-	margin-top: -2%;
-	display: flex;
-	margin-left: 26%;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 1em;
 }
 
 .social img {
-	height: 35px;
+	height: 2em;
 }
 
 /* Footer */
@@ -160,419 +184,39 @@ ul li {
 footer {
 	opacity: 10%;
 	text-align: center;
-	margin-bottom: 2%;
-	height: 3vh;
+	margin-top: -0.5em;
+	margin-bottom: 1em;
+	height: 1.5em;
 }
 
-@media (min-width: 300px) {
-	header {
-		margin-bottom: 7%;
-	}
+/* MediaQuery */
 
-	header img {
-		margin-left: 40%;
-		max-width: 20%;
-	}
-
-	.skills {
-		height: 30vh;
-	}
-
+@media (min-width: 40em) {
 	.projects {
-		height: 50vh;
-	}
-
-	.project {
-		width: 85%;
-		margin-left: 7.5%;
-	}
-
-	.contact h1 {
-		margin-top: 2%;
-		margin-bottom: 5%;
-	}
-
-	.redes {
-		margin-top: -6;
-		margin-left: 26%;
-	}
-
-	.social img {
-		height: 30px;
-	}
-}
-
-@media (min-width: 390px) {
-	header {
-		margin-bottom: 7%;
-	}
-
-	header img {
-		margin-left: 40%;
-		max-width: 20%;
-	}
-
-	.skills {
-		height: 25vh;
-	}
-
-	.projects {
-		height: 50vh;
-	}
-
-	.project {
-		margin-top: 5%;
-		height: 18vh;
-		width: 85%;
-		margin-left: 7.5%;
-	}
-
-	.contact h1 {
-		margin-top: 4%;
-		margin-bottom: 5%;
-	}
-
-	.redes {
-		margin-left: 25%;
-	}
-
-	.social img {
-		height: 2.5em;
-	}
-}
-
-@media (min-width: 500px) {
-	header {
-		margin-bottom: 7%;
-	}
-
-	header img {
-		margin-left: 40%;
-		max-width: 20%;
-	}
-
-	.redes {
-		margin-left: 30%;
-	}
-}
-
-@media (min-width: 650px) {
-	header {
-		margin-bottom: 7%;
-	}
-
-	header img {
-		margin-left: 40%;
-		max-width: 18%;
-	}
-
-	.skills {
-		padding-top: 2%;
+		padding-top: 0.2em;
 	}
 
 	.projects h2 {
-		margin-left: 8%;
+		margin-top: 0.5em;
+		margin-left: 0.2em;
 	}
 
 	.project {
-		margin-left: 7.5%;
-		margin-top: 3%;
-		height: 18vh;
-		width: 85%;
-		padding-top: 7%;
-	}
-
-	.redes {
-		margin-left: 33%;
-	}
-
-	.social img {
-		height: 40px;
+		min-height: 12em;
 	}
 }
 
-@media (min-width: 900px) {
-	header {
-		margin-bottom: 8%;
-	}
-
-	header img {
-		margin-left: 42%;
-		max-width: 15%;
-	}
-
-	.skills {
-		height: 27vh;
-		padding-top: 3%;
-	}
-
-	.tech {
-		margin-left: 20%;
-	}
-
+@media (min-width: 70em) {
 	.projects {
-		margin-top: 3%;
-		height: 45vh;
+		padding-top: 0.5em;
 	}
 
 	.projects h2 {
-		margin-top: 1%;
-		margin-left: 5%;
-		margin-bottom: 2%;
-	}
-
-	.project {
-		margin-left: 5%;
-		margin-top: 2%;
-		width: 90%;
-		padding-top: 7%;
-		height: 17vh;
-	}
-
-	.contact {
-		margin-top: 3%;
-	}
-
-	.redes {
-		margin-top: -3%;
-		margin-left: 36%;
-	}
-
-	.social img {
-		height: 40px;
-	}
-}
-
-@media (min-width: 1000px) {
-	header {
-		margin-bottom: 8%;
-	}
-
-	header img {
-		margin-left: 42%;
-		max-width: 15%;
-	}
-
-	.skills {
-		height: 30vh;
-		padding-top: 3%;
-	}
-
-	.projects {
-		height: 60vh;
-	}
-
-	.project {
-		margin-left: 5%;
-		margin-top: 2%;
-		height: 23vh;
-		width: 90%;
-		padding-top: 8%;
-	}
-
-	.redes {
-		margin-left: 37%;
-	}
-}
-
-@media (min-width: 1200px) {
-	header {
-		margin-bottom: 8%;
-	}
-
-	header img {
-		margin-left: 44%;
-		max-width: 12%;
-	}
-
-	.skills {
-		height: 30vh;
-		padding-top: 3%;
-	}
-
-	.projects {
-		height: 60vh;
-	}
-
-	.project {
-		margin-left: 5%;
-		margin-top: 1%;
-		height: 23vh;
-		width: 90%;
-		padding-top: 5%;
-	}
-
-	.redes {
-		margin-left: 40%;
-	}
-}
-
-@media (min-width: 1500px) {
-	header {
-		margin-bottom: 8%;
-	}
-
-	header img {
-		margin-left: 44%;
-		max-width: 12%;
-	}
-
-	.skills {
-		height: 30vh;
-		padding-top: 3%;
-	}
-
-	.projects {
-		height: 60vh;
+		margin-top: 0.3em;
+		margin-left: 0.2em;
 	}
 
 	.projects h2 {
-		margin-bottom: 1%;
-	}
-
-	.project {
-		margin-left: 5%;
-		margin-top: 1%;
-		height: 22vh;
-		width: 90%;
-		padding-top: 5%;
-	}
-
-	.contact h1 {
-		margin-bottom: 3.5%;
-	}
-
-	.redes {
-		margin-left: 40%;
-	}
-}
-
-@media (min-width: 1870px) {
-	header {
-		margin-bottom: 8%;
-	}
-
-	header img {
-		margin-left: 45%;
-		max-width: 12%;
-	}
-
-	main {
-		margin: 2%;
-	}
-
-	.skills {
-		height: 35vh;
-		padding-top: 1.5%;
-	}
-
-	ul {
-		padding-left: 0.5%;
-	}
-
-	.tech {
-		margin-left: 30%;
-	}
-
-	.software {
-		margin-left: 0%;
-	}
-
-	.projects {
-		margin-top: 2%;
-		height: 60vh;
-		padding-top: 1.5%;
-	}
-
-	.projects h2 {
-		margin-left: 5%;
-		margin-bottom: -0.5%;
-	}
-
-	.project {
-		margin-left: 5%;
-		margin-top: 1%;
-		width: 90%;
-		padding-top: 4%;
-	}
-
-	.contact {
-		margin-top: 2%;
-	}
-
-	.contact h1 {
-		margin-top: 1.3%;
-	}
-
-	.contact a {
-		margin-left: 2%;
-	}
-
-	.redes {
-		margin-left: 44.5%;
-	}
-}
-
-@media (min-width: 1920px) {
-	header {
-		margin-bottom: 8%;
-	}
-
-	header img {
-		margin-left: 44%;
-		max-width: 12%;
-	}
-
-	main {
-		margin: 2%;
-	}
-
-	.skills {
-		height: 35vh;
-		padding-top: 1.5%;
-	}
-
-	ul {
-		padding-left: 0.5%;
-	}
-
-	.tech {
-		margin-left: 30%;
-	}
-
-	.software {
-		margin-left: 0%;
-	}
-
-	.projects {
-		margin-top: 2%;
-		height: 60vh;
-	}
-
-	.projects h2 {
-		margin-top: -0.1%;
-		margin-left: 5%;
-		margin-bottom: 0%;
-	}
-
-	.project {
-		margin-left: 5%;
-		margin-top: 1.5%;
-		width: 90%;
-		height: 22vh;
-		padding-top: 4.5%;
-	}
-
-	.contact {
-		margin-top: 2%;
-	}
-
-	.contact h1 {
-		margin-top: 1.5%;
-		margin-bottom: 3.5%;
-	}
-
-	.redes {
-		margin-left: 44.5%;
+		margin-left: 0.2em;
 	}
 }
