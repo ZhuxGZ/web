@@ -34,10 +34,7 @@ main {
 
 a:link {
 	text-decoration: none;
-}
-
-a:visited {
-	color: rgb(240, 240, 240);
+	color: none;
 }
 
 .about-me {
@@ -121,6 +118,7 @@ ul li {
 }
 
 .calculator {
+	color: rgb(240, 240, 240);
 	background-image: linear-gradient(
 			-15deg,
 			rgba(159, 218, 229, 0.3) 0%,
