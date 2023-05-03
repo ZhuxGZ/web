@@ -5,34 +5,37 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="dist/output.css" />
+		<script src="js/email.js"></script>
+		<script
+			type="text/javascript"
+			src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+		></script>
+		<script type="text/javascript">
+			(function () {
+				emailjs.init("hgKKGoMfBdQhrhvRt");
+			})();
+		</script>
+
 		<title>ZHUX DEV</title>
 	</head>
-	<body class="font-inter bg-[#F3F4F6] text-[#1E1E1E]">
-		<header class="mb-16 text-center bg-[#F3F4F6]">
+	<body class="font-inter bg-white text-black">
+		<header class="mb-16 text-center">
 			<h1 class="font-extrabold text-4xl mt-2">ZHUX DEV</h1>
-			<div class="mt-10 flex flex-col justify-center items-center">
-				<div class="bg-gray-600 h-60 w-40 rounded-[20px]"></div>
-				<div class="w-full ml-8">
-					<h1 class="text-left font-bold text-3xl mt-10">Hi,</h1>
-					<p class="text-left text-base">
-						I'm Ignacio aka “Zhux”. I'm a self-taught developer from Argentina and this
-						is my portfolio.
+			<div class="mt-8 flex flex-col justify-center items-center">
+				<div class="bg-gray h-80 w-72 rounded-2xl"></div>
+				<div class="ml-4 mb-9">
+					<h1 class="text-left font-bold text-4xl mt-10">Hi,</h1>
+					<p class="text-left text-lg">
+						I'm Ignacio. I'm a self-taught developer from Argentina and this is my
+						portfolio.
 					</p>
-					<div class="mt-5">
-						<h3 class="text-left text-xl font-semibold mb-2">Tech stack:</h3>
+					<div class="mt-8 mb-10">
+						<h3 class="text-left text-xl font-semibold mb-4">Tech stack:</h3>
 						<div class="grid grid-flow-col auto-cols-min gap-2">
-							<div
-								class="w-12 h-12 bg-[url('/photos/html5.png')] bg-cover bg-center"
-							></div>
-							<div
-								class="w-12 h-12 bg-[url('/photos/css.png')] bg-cover bg-center"
-							></div>
-							<div
-								class="w-12 h-12 bg-[url('/photos/js.png')] bg-cover bg-center"
-							></div>
-							<div
-								class="w-12 h-12 bg-[url('/photos/tailwind.png')] bg-contain bg-center bg-no-repeat"
-							></div>
+							<div class="icons bg-[url('/photos/html5.png')]"></div>
+							<div class="icons bg-[url('/photos/css.png')]"></div>
+							<div class="icons bg-[url('/photos/js.png')]"></div>
+							<div class="icons bg-[url('/photos/tailwind.png')]"></div>
 						</div>
 					</div>
 				</div>
@@ -40,28 +43,59 @@
 		</header>
 		<main class="pt-3 bg-[#cccccc]">
 			<div>
-				<h1 class="text-3xl font-bold text-center m-3">Projects</h1>
+				<h1 class="text-3xl font-bold text-center m-2 mb-5">Projects</h1>
 				<div class="flex flex-col justify-center items-center">
-					<div class="w-80 mb-4 bg-[#F3F4F6] rounded-[20px] p-2">
-						<div class="bg-slate-700 h-36 rounded-[20px]"></div>
-						<h1 class="mt-2 ml-2 font-bold">GYM SUPPORT</h1>
-						<p class="ml-2 mb-2 text-base">
+					<div class="project">
+						<div class="projectPhoto"></div>
+						<h1 class="projectTitle">GYM SUPPORT</h1>
+						<p class="projectDescription">
 							This is a full resposive web for a company that provides a guidance for
 							your training and your alimentation
 						</p>
-						<button
-							class="rounded-[20px] m-2 h-8 w-32 border-2 border-[#1E1E1E] hover:bg-[#1E1E1E] hover:text-[#F3F4F6]"
-						>
-							Source Code
-						</button>
-						<button
-							class="rounded-[20px] m-2 h-8 w-32 border-2 border-[#1E1E1E] hover:bg-[#1E1E1E] hover:text-[#F3F4F6]"
-						>
-							Live Preview
-						</button>
+						<button class="projectButton">Source Code</button>
+						<button class="projectButton">Live Preview</button>
 					</div>
 				</div>
 			</div>
 		</main>
+		<footer>
+			<h1 class="text-3xl font-bold text-center m-2 mb-5">Contact me</h1>
+			<div class="flex flex-col items-center justify-center">
+				<input
+					class="w-80 h-9 p-3 mb-2 border-2 rounded-2xl border-black"
+					id="fullName"
+					type="text"
+					placeholder="Full Name"
+					required
+				/>
+				<input
+					class="w-80 h-9 p-3 mb-2 border-2 rounded-2xl border-black"
+					id="email"
+					type="email"
+					placeholder="Email"
+					required
+				/>
+				<input
+					class="w-80 h-48 border-2 rounded-2xl border-black p-3"
+					id="message"
+					type="text"
+					placeholder="Message"
+					required
+				/>
+				<button onclick="sendMail()" class="sendButton">Send</button>
+			</div>
+			<h2 class="text-center font-bold text-2xl m-2">Social</h2>
+			<div class="mb-2 grid grid-flow-col auto-cols-min gap-2 place-content-center">
+				<a href="http://instagram.com/zhuxgz/"
+					><div class="icons-small bg-[url(/photos/ig.png)]"></div
+				></a>
+				<a href="http://github.com/ZhuxGZ"
+					><div class="icons-small bg-[url(/photos/github.png)]"></div
+				></a>
+				<a href="http://ar.linkedin.com/in/ignacio-bergantiños/"
+					><div class="icons-small bg-[url(/photos/linkedin.png)]"></div
+				></a>
+			</div>
+		</footer>
 	</body>
 </html>
