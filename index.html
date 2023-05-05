@@ -18,74 +18,109 @@
 
 		<title>ZHUX DEV</title>
 	</head>
+
 	<body class="font-inter bg-white text-black">
-		<header class="mb-16 text-center">
-			<h1 class="font-extrabold text-4xl mt-2">ZHUX DEV</h1>
-			<div class="mt-8 flex flex-col justify-center items-center">
-				<div class="bg-gray h-80 w-72 rounded-2xl"></div>
-				<div class="ml-4 mb-9">
-					<h1 class="text-left font-bold text-4xl mt-10">Hi,</h1>
-					<p class="text-left text-lg">
-						I'm Ignacio. I'm a self-taught developer from Argentina and this is my
-						portfolio.
-					</p>
-					<div class="mt-8 mb-10">
-						<h3 class="text-left text-xl font-semibold mb-4">Tech stack:</h3>
-						<div class="grid grid-flow-col auto-cols-min gap-2">
-							<div class="icons bg-[url('/photos/html5.png')]"></div>
-							<div class="icons bg-[url('/photos/css.png')]"></div>
-							<div class="icons bg-[url('/photos/js.png')]"></div>
-							<div class="icons bg-[url('/photos/tailwind.png')]"></div>
-						</div>
+		<h1 class="font-extrabold text-4xl md:text-5xl text-center mt-2">ZHUX DEV</h1>
+		<header class="h-[95vh] smb-10 md:mb-14 text-center grid place-items-center">
+			<div class="mt-10 flex justify-center items-center flex-col md:flex-row">
+				<div class="image bg-[url(/photos/me.jpeg)]"></div>
+				<div class="flex flex-col justify-center items-center mb-9 md:w-80 md:ml-6 xl:w-96">
+					<div>
+						<h1 class="ml-4 text-left font-bold text-4xl md:text-5xl mt-10">Hi,</h1>
+						<p class="ml-4 max-w-md text-left text-lg md:text-xl xl:w-96">
+							I'm Ignacio. I'm a self-taught developer from Argentina and this is my
+							portfolio.
+						</p>
+					</div>
+					<div class="mt-8 flex flex-col justify-center items-center">
+						<h3
+							class="w-40 text-xl md:text-2xl font-semibold mb-4 text-center border-b-2 border-[text-black]"
+						>
+							Tech stack
+						</h3>
+						<li class="grid grid-flow-col auto-cols-min gap-2">
+							<ul class="icons">
+								<img src="photos/html5.png" alt="html photo" />
+							</ul>
+							<ul class="icons">
+								<img src="photos/css.png" alt="Css photo" />
+							</ul>
+							<ul class="icons">
+								<img src="photos/js.png" alt="javascript photo" />
+							</ul>
+							<ul class="icons">
+								<img src="photos/tailwind.png" alt="tailwind photo" />
+							</ul>
+						</li>
 					</div>
 				</div>
 			</div>
 		</header>
-		<main class="pt-3 bg-[#cccccc]">
-			<div>
-				<h1 class="text-3xl font-bold text-center m-2 mb-5">Projects</h1>
-				<div class="flex flex-col justify-center items-center">
+		<main class="bg-[#fafafa]">
+			<div class="p-5">
+				<h1 class="text-3xl font-bold text-center mb-5 xl:mb-6">Projects</h1>
+				<div
+					class="grid grid-flow-row gap-4 xl:grid-flow-col xl:gap-4 xl:auto-cols-min place-content-center"
+				>
 					<div class="project">
 						<div class="projectPhoto"></div>
-						<h1 class="projectTitle">GYM SUPPORT</h1>
-						<p class="projectDescription">
-							This is a full resposive web for a company that provides a guidance for
-							your training and your alimentation
-						</p>
-						<button class="projectButton">Source Code</button>
-						<button class="projectButton">Live Preview</button>
+						<div>
+							<h1 class="projectTitle">GYM SUPPORT</h1>
+							<p class="projectDescription">
+								This is a full resposive web for a company that provides a guidance
+								for your training and your alimentation.
+							</p>
+							<div class="projectButtonContainer">
+								<button class="projectButton">Source Code</button>
+								<button class="projectButton">Live Preview</button>
+							</div>
+						</div>
+					</div>
+					<div class="project">
+						<div class="projectPhoto"></div>
+						<div>
+							<h1 class="projectTitle">BOSTON CELTICS</h1>
+							<p class="projectDescription">
+								This is a full resposive web made in colaboration with Luis Torres
+								for the team Boston Celtic.
+							</p>
+							<div class="projectButtonContainer">
+								<button class="projectButton">Source Code</button>
+								<button class="projectButton">Live Preview</button>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</main>
 		<footer>
-			<h1 class="text-3xl font-bold text-center m-2 mb-5">Contact me</h1>
+			<h1 class="text-3xl font-bold text-center mt-5 mb-3 md:mt-4 md:mb-5">Contact</h1>
 			<div class="flex flex-col items-center justify-center">
 				<input
-					class="w-80 h-9 p-3 mb-2 border-2 rounded-2xl border-black"
+					class="w-80 md:w-96 h-9 p-3 mb-2 border-2 rounded-2xl border-black"
 					id="fullName"
 					type="text"
 					placeholder="Full Name"
 					required
 				/>
 				<input
-					class="w-80 h-9 p-3 mb-2 border-2 rounded-2xl border-black"
+					class="w-80 md:w-96 h-9 p-3 mb-2 border-2 rounded-2xl border-black"
 					id="email"
-					type="email"
+					type="text"
 					placeholder="Email"
 					required
 				/>
 				<input
-					class="w-80 h-48 border-2 rounded-2xl border-black p-3"
+					class="w-80 md:w-96 h-48 border-2 rounded-2xl border-black p-3"
 					id="message"
 					type="text"
 					placeholder="Message"
 					required
 				/>
-				<button onclick="sendMail()" class="sendButton">Send</button>
+				<button id="sendButton" onclick="sendMail()" class="sendButton">Send</button>
 			</div>
-			<h2 class="text-center font-bold text-2xl m-2">Social</h2>
-			<div class="mb-2 grid grid-flow-col auto-cols-min gap-2 place-content-center">
+			<h2 class="text-center font-bold text-2xl md:text-3xl m-2 md:m-3 md:mb-1">Social</h2>
+			<div class="grid place-content-center grid-flow-col auto-cols-min gap-2 mb-2">
 				<a href="http://instagram.com/zhuxgz/"
 					><div class="icons-small bg-[url(/photos/ig.png)]"></div
 				></a>
