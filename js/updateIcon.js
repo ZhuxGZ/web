@@ -1,11 +1,10 @@
-matcher = window.matchMedia("(prefers-color-scheme: dark)");
+let blackico = document.querySelector("link#black-ico");
+let whiteico = document.querySelector("link#white-ico");
 
+matcher = window.matchMedia("(prefers-color-scheme: dark)");
 matcher.addListener(onUpdate);
 
 function onUpdate() {
-	let blackico = document.querySelector("link#black-ico");
-	let whiteico = document.querySelector("link#white-ico");
-
 	if (matcher.matches) {
 		blackico.remove();
 		document.head.append(whiteico);
