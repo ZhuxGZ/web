@@ -4,69 +4,124 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>ZhuxGZ</title>
-		<link rel="shortcut icon" href="Photos/logo-header.ico" type="image/x-icon" />
-		<link rel="stylesheet" href="CSS/style.css" />
+		<link rel="stylesheet" href="dist/output.css" />
+		<script src="js/email.js"></script>
+		<script
+			type="text/javascript"
+			src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+		></script>
+		<script type="text/javascript">
+			(function () {
+				emailjs.init("hgKKGoMfBdQhrhvRt");
+			})();
+		</script>
+
+		<title>ZHUX DEV</title>
+		<link rel="icon" href="photos/black.ico" id="black-ico">
+		<link rel="icon" href="photos/white.ico" id="white-ico">
+		<script src="js/updateIcon.js"></script>
 	</head>
-	<body>
-		<header>
-			<a href="https://zhuxgz.com"><img src="Photos/logo-header.png" alt="logo" /></a>
+
+	<body class="font-inter bg-white text-black relative">
+		<header class="min-h-fit mb-10 md:mb-14 text-center grid place-items-center">
+			<h1 class="font-extrabold text-4xl md:text-5xl text-center m-4">ZHUX DEV</h1>
+			<div class="min-h-[95vh] mt-10 flex justify-center items-center flex-col md:flex-row ">
+				<div class="image bg-[url(/photos/me.jpeg)]"></div>
+				<div class="flex flex-col justify-center items-center mb-9 md:w-80 md:ml-6 xl:w-96">
+					<div>
+						<h1 class="ml-4 text-left font-bold text-4xl md:text-5xl mt-10">Hi,</h1>
+						<p class="ml-4 max-w-sm text-left text-lg">
+							I'm Ignacio. I'm a self-taught developer from Argentina and this is my
+							portfolio.
+						</p>
+					</div>
+					<div class="mt-8 flex flex-col justify-center items-center">
+						<h3
+							class="w-40 text-xl md:text-2xl font-semibold mb-4 text-center border-b-2 border-[text-black]"
+						>
+							Tech stack
+						</h3>
+						<li class="grid grid-flow-col auto-cols-min gap-2 mb-4">
+							<ul class="icons">
+								<img src="photos/html5.png" alt="html photo" />
+							</ul>
+							<ul class="icons">
+								<img src="photos/css.png" alt="Css photo" />
+							</ul>
+							<ul class="icons">
+								<img src="photos/js.png" alt="javascript photo" />
+							</ul>
+							<ul class="icons">
+								<img src="photos/tailwind.png" alt="tailwind photo" />
+							</ul>
+						</li>
+					</div>
+				</div>
+			</div>
 		</header>
-		<main>
-			<div class="about-me">
-				<h1>Ignacio Bergantiños</h1>
-				<h4>Junior Developer</h4>
-				<p></p>
-			</div>
-
-			<div class="skills">
-				<div class="tech">
-					<h3>Technologies</h3>
-					<ul>
-						<li>HTML</li>
-						<li>CSS</li>
-						<li>JavaScript</li>
-						<li>C/C++</li>
-						<li>SQL</li>
-					</ul>
-				</div>
-
-				<div class="software">
-					<h3>Software</h3>
-					<ul>
-						<li>Photoshop</li>
-						<li>Illustrator</li>
-						<li>Solid Edge</li>
-						<li>Blender</li>
-					</ul>
-				</div>
-			</div>
-			<div class="projects">
-				<h2>Projects</h2>
-				<a href="https://zhuxgz.github.io/simple-calculator/"
-					><div class="project calculator"><h3>Calculator</h3></div></a
-				>
-				<a href="https://zhuxgz.github.io/taskmanager/"
-					><div class="project taskmanager"><h3>Task Manager</h3></div></a
-				>
-			</div>
-			<div class="contact">
-				<h1>Contact Info</h1>
-				<div class="redes">
-					<a class="social" href="https://github.com/ZhuxGZ"
-						><img class="social" src="Photos/github.png" alt="github logo"
-					/></a>
-					<a class="social" href="https://www.instagram.com/zhuxgz/"
-						><img src="Photos/ig.png" alt="instagram logo"
-					/></a>
-					<a class="social" href="mailto:bergantinos.ignacio@gmail.com"
-						><img class="social" src="Photos/mail.png" alt="mail button"
-					/></a>
+		<main class="bg-[#fafafa] mt-2 box-border p-4">
+				<h1 class="text-3xl font-bold text-center mb-5 xl:mb-6">Projects</h1>
+				<div class="grid place-items-center h-fit">
+					<div class="project">
+						<div class="projectImg"><img src="photos/gymsupport.png" alt="gmysupport image" /></div>
+						<div class="projectInfo">
+							<h1 class="projectTitle">GYM SUPPORT</h1>
+							<p class="projectDescription">
+								This is a full resposive landing page for a company that provides a guidance
+								for your training and your alimentation.
+							</p>
+							<div class="tags">
+								<ul>
+									<li><h2>Tailwind</h2></li>
+								</ul>
+							</div>
+							<div class="projectButtonContainer">
+								<button class="projectButton">Source Code</button>
+								<button class="projectButton">Live Preview</button>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</main>
 		<footer>
-			<p class="footer">Developed by ZhuxGZ</p>
+			<h1 class="text-3xl font-bold text-center mt-5 mb-3 md:mt-4 md:mb-5">Contact</h1>
+			<div class="flex flex-col items-center justify-center">
+				<input
+					class="w-80 md:w-96 h-11 p-3 mb-2 border-2 rounded-3xl border-black "
+					id="fullName"
+					type="text"
+					placeholder="Full Name"
+					required
+				/>
+				<input
+					class="w-80 md:w-96 h-11 p-3 mb-2 border-2 rounded-3xl border-black "
+					id="email"
+					type="text"
+					placeholder="Email"
+					required
+				/>
+				<input
+					class="w-80 md:w-96 border-2 rounded-3xl border-black p-3 h-56"
+					id="message"
+					type="text"
+					placeholder="Message"
+					required
+				/>
+				<button id="sendButton" onclick="sendMail()" class="sendButton">Send</button>
+			</div>
+			<h2 class="text-center font-bold text-2xl md:text-3xl m-2 md:m-3 md:mb-1">Social</h2>
+			<div class="grid place-content-center grid-flow-col auto-cols-min gap-2 mb-2">
+				<a href="http://instagram.com/zhuxgz/"
+					><div class="icons-small bg-[url(/photos/ig.png)]"></div
+				></a>
+				<a href="http://github.com/ZhuxGZ"
+					><div class="icons-small bg-[url(/photos/github.png)]"></div
+				></a>
+				<a href="http://ar.linkedin.com/in/ignacio-bergantiños/"
+					><div class="icons-small bg-[url(/photos/linkedin.png)]"></div
+				></a>
+			</div>
 		</footer>
 	</body>
 </html>
