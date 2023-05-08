@@ -729,8 +729,20 @@ video {
   background-image: url(/photos/linkedin.png);
 }
 
-.bg-\[url\(\/photos\/me\.jpeg\)\] {
-  background-image: url(/photos/me.jpeg);
+.bg-\[url\(\/photos\/me\.webp\)\] {
+  background-image: url(/photos/me.webp);
+}
+
+.bg-\[url\(\/photos\/ig\.webp\)\] {
+  background-image: url(/photos/ig.webp);
+}
+
+.bg-\[url\(\/photos\/github\.webp\)\] {
+  background-image: url(/photos/github.webp);
+}
+
+.bg-\[url\(\/photos\/linkedin\.webp\)\] {
+  background-image: url(/photos/linkedin.webp);
 }
 
 .p-3 {
