@@ -121,8 +121,8 @@
 
 .projectButton {
 	height: 2.5rem;
-	min-width: 8rem;
-	max-width: 12rem;
+	width: 50%;
+	padding: 0.25rem;
 	border: 2px solid #1e1e1e;
 	border-radius: 20px;
 	margin: 0.5rem;
