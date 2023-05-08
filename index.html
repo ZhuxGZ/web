@@ -20,14 +20,14 @@
 	</head>
 
 	<body class="font-inter bg-white text-black">
-		<h1 class="font-extrabold text-4xl md:text-5xl text-center mt-2">ZHUX DEV</h1>
-		<header class="h-[95vh] smb-10 md:mb-14 text-center grid place-items-center">
-			<div class="mt-10 flex justify-center items-center flex-col md:flex-row">
+		<header class="min-h-fit smb-10 md:mb-14 text-center grid place-items-center">
+			<h1 class="font-extrabold text-4xl md:text-5xl text-center mt-2">ZHUX DEV</h1>
+			<div class="h-[95vh] mt-10 flex justify-center items-center flex-col md:flex-row">
 				<div class="image bg-[url(/photos/me.jpeg)]"></div>
 				<div class="flex flex-col justify-center items-center mb-9 md:w-80 md:ml-6 xl:w-96">
 					<div>
 						<h1 class="ml-4 text-left font-bold text-4xl md:text-5xl mt-10">Hi,</h1>
-						<p class="ml-4 max-w-md text-left text-lg md:text-xl xl:w-96">
+						<p class="ml-4 max-w-sm text-left text-lg">
 							I'm Ignacio. I'm a self-taught developer from Argentina and this is my
 							portfolio.
 						</p>
@@ -38,7 +38,7 @@
 						>
 							Tech stack
 						</h3>
-						<li class="grid grid-flow-col auto-cols-min gap-2">
+						<li class="grid grid-flow-col auto-cols-min gap-2 mb-4">
 							<ul class="icons">
 								<img src="photos/html5.png" alt="html photo" />
 							</ul>
@@ -56,20 +56,23 @@
 				</div>
 			</div>
 		</header>
-		<main class="bg-[#fafafa]">
-			<div class="p-5">
+		<main class="bg-[#fafafa] mt-2 box-border p-4">
 				<h1 class="text-3xl font-bold text-center mb-5 xl:mb-6">Projects</h1>
-				<div
-					class="grid grid-flow-row gap-4 xl:grid-flow-col xl:gap-4 xl:auto-cols-min place-content-center"
-				>
+				<div class="grid place-items-center h-fit">
 					<div class="project">
-						<div class="projectPhoto"></div>
-						<div>
+						<div class="projectImg"><img src="photos/car-rental.webp" alt="" /></div>
+						<div class="projectInfo">
 							<h1 class="projectTitle">GYM SUPPORT</h1>
 							<p class="projectDescription">
 								This is a full resposive web for a company that provides a guidance
 								for your training and your alimentation.
 							</p>
+							<div class="tags">
+								<ul>
+									<li><h2>Tailwind</h2></li>
+									<li><h2>JavaScript</h2></li>
+								</ul>
+							</div>
 							<div class="projectButtonContainer">
 								<button class="projectButton">Source Code</button>
 								<button class="projectButton">Live Preview</button>
@@ -77,13 +80,19 @@
 						</div>
 					</div>
 					<div class="project">
-						<div class="projectPhoto"></div>
-						<div>
+						<div class="projectImg"></div>
+						<div class="projectInfo">
 							<h1 class="projectTitle">BOSTON CELTICS</h1>
 							<p class="projectDescription">
 								This is a full resposive web made in colaboration with Luis Torres
 								for the team Boston Celtic.
 							</p>
+							<div class="tags">
+								<ul>
+									<li><h2>Tailwind</h2></li>
+									<li><h2>JavaScript</h2></li>
+								</ul>
+							</div>
 							<div class="projectButtonContainer">
 								<button class="projectButton">Source Code</button>
 								<button class="projectButton">Live Preview</button>
