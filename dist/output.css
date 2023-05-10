@@ -717,32 +717,20 @@ video {
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\/photos\/github\.png\)\] {
-  background-image: url(/photos/github.png);
-}
-
-.bg-\[url\(\/photos\/ig\.png\)\] {
-  background-image: url(/photos/ig.png);
-}
-
-.bg-\[url\(\/photos\/linkedin\.png\)\] {
-  background-image: url(/photos/linkedin.png);
-}
-
-.bg-\[url\(\/photos\/me\.webp\)\] {
-  background-image: url(/photos/me.webp);
+.bg-\[url\(\/photos\/github\.webp\)\] {
+  background-image: url(/photos/github.webp);
 }
 
 .bg-\[url\(\/photos\/ig\.webp\)\] {
   background-image: url(/photos/ig.webp);
 }
 
-.bg-\[url\(\/photos\/github\.webp\)\] {
-  background-image: url(/photos/github.webp);
-}
-
 .bg-\[url\(\/photos\/linkedin\.webp\)\] {
   background-image: url(/photos/linkedin.webp);
+}
+
+.bg-\[url\(\/photos\/me\.webp\)\] {
+  background-image: url(/photos/me.webp);
 }
 
 .p-3 {
@@ -1037,6 +1025,12 @@ video {
     max-width: 60%;
   }
 
+  .projectInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   .projectTitle {
     margin-bottom: 1rem;
   }
@@ -1046,7 +1040,7 @@ video {
   }
 
   .projectButtonContainer {
-    margin-top: 7rem;
+    margin-top: 6rem;
   }
 }
 

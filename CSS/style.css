@@ -220,6 +220,12 @@
 		max-width: 60%;
 	}
 
+	.projectInfo {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
 	.projectTitle {
 		margin-bottom: 1rem;
 	}
@@ -228,6 +234,6 @@
 	}
 
 	.projectButtonContainer {
-		margin-top: 7rem;
+		margin-top: 6rem;
 	}
 }
