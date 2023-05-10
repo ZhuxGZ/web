@@ -78,15 +78,14 @@
 	width: 100%;
 }
 
-.projectImg img:hover {
-	transform: translateY(-50%);
+.projectImg img {
+	width: 100%;
+	transform: translateY(0%);
 	transition: transform 10s ease-in-out 0s;
 }
 
-.projectImg img {
-	height: auto;
-	width: 100%;
-	transform: translateY(0%);
+.projectImg img:hover {
+	transform: translateY(-50%);
 	transition: transform 10s ease-in-out 0s;
 }
 
@@ -235,5 +234,12 @@
 
 	.projectButtonContainer {
 		margin-top: 6rem;
+	}
+}
+
+@media (max-width: 600px) {
+	.no-scroll img:hover {
+		transform: translateY(0%) !important;
+		transition: transform 10s ease-in-out 0s;
 	}
 }
