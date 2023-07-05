@@ -87,28 +87,34 @@
 		<footer>
 			<h1 class="text-3xl font-bold text-center mt-5 mb-3 md:mt-4 md:mb-5">Contact</h1>
 			<div class="flex flex-col items-center justify-center">
-				<input
+				<form class="flex flex-col justify-center items-center" action="https://formsubmit.co/3a31d28d00e5f80fa58bf22705cd4b41" method="POST">
+					<input type="hidden" name="_subject" value="New form!">
+					<input
 					class="w-80 md:w-96 h-11 p-3 mb-2 border-2 rounded-3xl border-black "
 					id="fullName"
 					type="text"
+					name="name"
 					placeholder="Full Name"
 					required
 				/>
 				<input
 					class="w-80 md:w-96 h-11 p-3 mb-2 border-2 rounded-3xl border-black "
 					id="email"
-					type="text"
+					type="email"
+					name="email"
 					placeholder="Email"
 					required
 				/>
 				<input
 					class="w-80 md:w-96 border-2 rounded-3xl border-black p-3 h-56"
 					id="message"
+					name="message"
 					type="text"
 					placeholder="Message"
 					required
 				/>
-				<button id="sendButton" onclick="sendMail()" class="sendButton">Send</button>
+				<button id="sendButton" type="submit" class="sendButton">Send</button>
+				</form>
 			</div>
 			<h2 class="text-center font-bold text-2xl md:text-3xl m-2 md:m-3 md:mb-1">Social</h2>
 			<div class="grid place-content-center grid-flow-col auto-cols-min gap-2 mb-2">
