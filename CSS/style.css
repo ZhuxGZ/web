@@ -95,23 +95,23 @@
 }
 
 .projectTitle {
-	margin-top: 1rem;
+	margin-top: 1em;
+	margin-bottom: 1em;
 	margin-bottom: 0.5rem;
 	font-weight: bold;
 	font-size: larger;
 }
 
 .projectDescription {
-	margin-top: 1rem;
-	margin-bottom: 0.5rem;
 	margin: 0 auto;
-	margin-bottom: 0.2rem;
+	margin-top: 0.7em;
+	margin-bottom: 1em;
 	max-width: 20rem;
 	font-size: large;
 }
 
 .projectButtonContainer {
-	margin-top: 1rem;
+	margin-top: 2rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -126,13 +126,16 @@
 	border-radius: 20px;
 	margin: 0.5rem;
 	font-weight: bold;
+	transition: all 0.2s linear;
 }
 
 .projectButton:hover {
 	background-color: #1e1e1e;
 	color: #f3f4f6;
 }
-
+.tags {
+	margin: 1em;
+}
 .tags ul {
 	display: flex;
 	flex-direction: row;
@@ -162,6 +165,7 @@
 	border: 2px solid #1e1e1e;
 	border-radius: 20px;
 	margin: 0.5rem;
+	transition: all 0.2s linear;
 }
 
 .sendButton:hover {
@@ -233,7 +237,7 @@
 	}
 
 	.projectButtonContainer {
-		margin-top: 6rem;
+		margin-top: auto;
 	}
 }
 
