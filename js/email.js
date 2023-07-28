@@ -22,6 +22,14 @@ window.onload = function () {
 			},
 			function (error) {
 				console.log("FAILED...", error);
+
+				submit.classList.add("failed");
+				submit.innerHTML = "Failed";
+
+				setTimeout(() => {
+					submit.classList.remove("failed");
+					submit.innerHTML = "Send";
+				}, 1500);
 			}
 		);
 	});
