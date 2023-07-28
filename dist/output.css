@@ -590,10 +590,6 @@ video {
   display: grid;
 }
 
-.hidden {
-  display: none;
-}
-
 .h-11 {
   height: 2.75rem;
 }
@@ -973,7 +969,13 @@ video {
   border: 2px solid #1e1e1e;
   border-radius: 20px;
   margin: 0.5rem;
-  transition: all 0.2s linear;
+  transition: background-color 0.4s ease-in-out;
+}
+
+.submit {
+  background-color: #10ca6d !important;
+  color: white !important;
+  border: none;
 }
 
 .sendButton:hover {

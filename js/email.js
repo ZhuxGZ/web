@@ -1,5 +1,6 @@
 window.onload = function () {
 	const formInputs = document.querySelectorAll("#contact-form input");
+	const submit = document.querySelector("#sendButton");
 	document.getElementById("contact-form").addEventListener("submit", function (event) {
 		event.preventDefault();
 		// these IDs from the previous steps
@@ -10,6 +11,14 @@ window.onload = function () {
 				for (let i = 0; i < formInputs.length; i++) {
 					formInputs[i].value = "";
 				}
+
+				submit.classList.add("submit");
+				submit.innerHTML = "Sended";
+
+				setTimeout(() => {
+					submit.classList.remove("submit");
+					submit.innerHTML = "Send";
+				}, 1500);
 			},
 			function (error) {
 				console.log("FAILED...", error);
