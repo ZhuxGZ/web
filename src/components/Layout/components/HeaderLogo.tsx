@@ -1,6 +1,6 @@
 interface HeaderLogoProps {
-	height?: number;
-	width?: number;
+	height?: number | string;
+	width?: number | string;
 }
 
 export const HeaderLogo = ({ height, width }: HeaderLogoProps) => (

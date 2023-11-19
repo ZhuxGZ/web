@@ -1,7 +1,13 @@
-export const Layout = ({ children }) => {
+import { ReactNode } from 'react';
+import { HeaderLogo } from './components/';
+import styles from './Layout.module.scss';
+
+export const Layout = ({ children }: { children: ReactNode }) => {
 	return (
 		<>
-			<header></header>
+			<header className={styles.header}>
+				<HeaderLogo width={'54px'} />
+			</header>
 			<main>{children}</main>
 		</>
 	);
