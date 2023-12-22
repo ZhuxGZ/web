@@ -1,10 +1,9 @@
-import { HeroProfile, Layout, Card } from './components';
+import { HeroProfile, Layout } from './components';
 
 function App() {
 	return (
 		<Layout>
 			<HeroProfile />
-			<Card />
 		</Layout>
 	);
 }

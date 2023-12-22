@@ -1,25 +1,62 @@
+import { Badge } from '..';
 import styles from './TechStack.module.scss';
 
-const TECHS = {
+const TECHS_FRONT = {
 	React: 'React',
 	Tailwind: 'Tailwind',
 	HTML: 'HTML',
 	CSS: 'CSS',
-	JS: 'JS',
+	JavaScript: 'JavaScript',
 	SASS: 'SASS',
-	TS: 'TS',
+	TypeScript: 'TypeScript',
+	Next: 'Next',
 };
 
-type Techs = keyof typeof TECHS;
+const TECHS_BACK = {
+	SQLite: 'SQLite',
+	MySQL: 'MySQL',
+	NodeJS: 'NodeJS',
+	GraphQL: 'GraphQL',
+};
 
-export const TechStack = ({ title, techs }: { title?: string; techs: Techs[] }) => {
+type Back = keyof typeof TECHS_BACK;
+type Front = keyof typeof TECHS_FRONT;
+
+export const TechStack = ({
+	title,
+	front,
+	back,
+}: {
+	title?: string;
+	front: Front[];
+	back: Back[];
+}) => {
 	return (
 		<section className={styles.container}>
 			<h2>{title}</h2>
-			<section className={styles.container__tech}>
-				{techs.map((tech) => {
-					return <img key={tech} src={`src/components/TechStack/assets/${tech}.svg`}></img>;
-				})}
+			<section>
+				<h3>Front End</h3>
+				<section className={styles.container__tech}>
+					{front.map((tech) => {
+						return (
+							<Badge key={tech} fontWeight="bold">
+								{tech}
+							</Badge>
+						);
+					})}
+				</section>
+			</section>
+			<section className={styles.container__techSection}>
+				<h3>Back End</h3>
+				<section className={styles.container__tech}>
+					{back.map((tech) => {
+						return (
+							<Badge key={tech} fontWeight="bold">
+								{tech}
+							</Badge>
+						);
+					})}
+				</section>
 			</section>
 		</section>
 	);
