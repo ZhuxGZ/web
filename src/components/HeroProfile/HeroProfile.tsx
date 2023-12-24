@@ -10,14 +10,17 @@ export const HeroProfile = () => {
 					<section className={styles.container__info__description}>
 						<h2>Hi,</h2>
 						<p>
-							I’m <span>Ignacio</span>, a self-taught developer from Argentina, from a young age i
-							was very passionate about the informatics and robotics.
+							I’m <span>Ignacio</span>, a self-taught developer from Argentina, My passion for
+							informatics and robotics has been with me since a young age.
 						</p>
 						<p>
-							So during the confinement in 2020 i decided to start learning web development as an
-							self-taught.
+							During the confinement in 2020, I made the decision to delve into web development as a
+							self-learner.
 						</p>
-						<p>Now i'm mainly into Front End development with React and TypeScript.</p>
+						<p>
+							I believe in the power of continuous learning and adaptability in the ever-evolving
+							world of technology. Each day brings new challenges and opportunities for growth.
+						</p>
 						<section className={styles.container__media}>
 							<a href="https://www.linkedin.com/in/ignacio-berganti%C3%B1os/" target="_blank">
 								<LinkedinSvg className={styles.container__media__linkedin} />
