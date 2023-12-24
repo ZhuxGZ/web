@@ -11,7 +11,7 @@ export const Link = ({
 	icon?: boolean;
 }) => {
 	return (
-		<a className={styles.link} href={href}>
+		<a className={styles.link} style={{ display: icon ? 'flex' : 'inline-block' }} href={href}>
 			{children}
 			{icon && <ArrowSvg />}
 		</a>
