@@ -1,1 +1,2 @@
-export { HeaderLogo } from './HeaderLogo';
+export * from './HeaderLogo';
+export * from './Contact';

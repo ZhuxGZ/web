@@ -1,4 +1,4 @@
-import { TechStack, LinkedinSvg, GithubSvg } from '..';
+import { LinkedinSvg, GithubSvg } from '..';
 import styles from './HeroProfile.module.scss';
 
 export const HeroProfile = () => {
@@ -11,9 +11,13 @@ export const HeroProfile = () => {
 						<h2>Hi,</h2>
 						<p>
 							I’m <span>Ignacio</span>, a self-taught developer from Argentina, from a young age i
-							was very passionate about the informatics and robotics, during the confinement in 2020
-							i started to take many courses and lectures about web development.
+							was very passionate about the informatics and robotics.
 						</p>
+						<p>
+							So during the confinement in 2020 i decided to start learning web development as an
+							self-taught.
+						</p>
+						<p>Now i'm mainly into Front End development with React and TypeScript.</p>
 						<section className={styles.container__media}>
 							<a href="https://www.linkedin.com/in/ignacio-berganti%C3%B1os/" target="_blank">
 								<LinkedinSvg className={styles.container__media__linkedin} />
@@ -23,11 +27,6 @@ export const HeroProfile = () => {
 							</a>
 						</section>
 					</section>
-					<TechStack
-						title="Tech Stack"
-						front={['HTML', 'CSS', 'JavaScript', 'TypeScript', 'React', 'Next', 'Tailwind', 'SASS']}
-						back={['NodeJS', 'GraphQL', 'SQLite', 'MySQL']}
-					/>
 				</section>
 			</section>
 		</section>

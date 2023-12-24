@@ -4,3 +4,7 @@ export * from './TechStack';
 export * from './Button';
 export * from './SVG';
 export * from './Badge';
+export * from './TechList';
+export * from './MyWork';
+export * from './Link';
+export * from './Divider';

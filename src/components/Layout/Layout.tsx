@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import { HeaderLogo } from './components/';
+import { Contact, HeaderLogo } from './components/';
 import styles from './Layout.module.scss';
 
 export const Layout = ({ children }: { children: ReactNode }) => {
@@ -9,6 +9,9 @@ export const Layout = ({ children }: { children: ReactNode }) => {
 				<HeaderLogo width={'54px'} height={'57px'} />
 			</header>
 			<main>{children}</main>
+			<footer>
+				<Contact />
+			</footer>
 		</>
 	);
 };
