@@ -1,4 +1,4 @@
-import { HeroProfile, Layout, TechStack, MyWork, Divider } from './components';
+import { HeroProfile, Layout, TechStack, MyWork, Divider, LatestProjects } from './components';
 
 function App() {
 	return (
@@ -11,6 +11,8 @@ function App() {
 			/>
 			<Divider />
 			<MyWork />
+			<Divider />
+			<LatestProjects />
 			<Divider />
 		</Layout>
 	);

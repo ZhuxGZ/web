@@ -8,3 +8,4 @@ export * from './TechList';
 export * from './MyWork';
 export * from './Link';
 export * from './Divider';
+export * from './LatestProjects';
