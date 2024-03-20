@@ -7,9 +7,21 @@ export const MyWork = ({ sx }: { sx?: CSSProperties }) => {
 			<h2>My Work</h2>
 			<section>
 				<Work
+					role="Back End Developer"
+					company="GM2DEV"
+					date="FEB 2024 - NOW"
+					techs={['C#', '.NET', 'SQL']}
+					description="Worked with .NET, SQL databases and azure functions to build a data warehouse to store medical data that was needed to made accurate reports for the different areas of the company."
+					tasklist={[
+						'Develop different azure functions to collect data from different medical centers.',
+						'Identify improvement opportunities.',
+						'Ensure that the reports produced from the data warehouse collection are similar to the reports from the individual sites.',
+					]}
+				/>
+				<Work
 					role="Front End Developer"
 					company="GM2DEV"
-					date="JUN 2024 - NOW"
+					date="JUN 2024 - FEB 2024"
 					techs={['TypeScript', 'React', 'GraphQL']}
 					description="I was tasked with enhancing applications by incorporating numerous features. My commitment has consistently been to deliver these features with excellent responsiveness, ensuring a seamless and user-friendly experience."
 					tasklist={[

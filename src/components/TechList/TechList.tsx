@@ -1,20 +1,24 @@
 import { Badge } from '..';
 import styles from './TechList.module.scss';
 
-const TECHS = {
-	React: 'React',
-	Tailwind: 'Tailwind',
-	HTML: 'HTML',
-	CSS: 'CSS',
-	JavaScript: 'JavaScript',
-	SASS: 'SASS',
-	TypeScript: 'TypeScript',
-	Next: 'Next',
-	SQLite: 'SQLite',
-	MySQL: 'MySQL',
-	NodeJS: 'NodeJS',
-	GraphQL: 'GraphQL',
-};
+enum TECHS {
+	'React',
+	'Tailwind',
+	'HTML',
+	'CSS',
+	'JavaScript',
+	'SASS',
+	'TypeScript',
+	'Next',
+	'SQLite',
+	'SQL',
+	'MySQL',
+	'NodeJS',
+	'GraphQL',
+	'C#',
+	'.NET',
+	'Python',
+}
 
 export type Techs = keyof typeof TECHS;
 

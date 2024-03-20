@@ -7,7 +7,7 @@ function App() {
 			<Divider />
 			<TechStack
 				front={['HTML', 'CSS', 'JavaScript', 'TypeScript', 'React', 'Next', 'Tailwind', 'SASS']}
-				back={['NodeJS', 'GraphQL', 'SQLite', 'MySQL']}
+				back={['NodeJS', 'SQL', 'GraphQL', 'SQLite', 'MySQL', 'C#', '.NET', 'Python']}
 			/>
 			<Divider />
 			<MyWork />
