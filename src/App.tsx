@@ -1,4 +1,4 @@
-import { HeroProfile, Layout, TechStack, MyWork, Divider, LatestProjects } from './components';
+import { HeroProfile, Layout, TechStack, MyWork, Divider, LatestProjects } from "./components";
 
 function App() {
 	return (
@@ -6,8 +6,8 @@ function App() {
 			<HeroProfile />
 			<Divider />
 			<TechStack
-				front={['HTML', 'CSS', 'JavaScript', 'TypeScript', 'React', 'Next', 'Tailwind', 'SASS']}
-				back={['NodeJS', 'SQL', 'GraphQL', 'SQLite', 'MySQL', 'C#', '.NET', 'Python']}
+				front={["HTML", "CSS", "JavaScript", "TypeScript", "React", "Next", "Tailwind", "SASS"]}
+				back={["NodeJS", "SQL", "GraphQL", "SQLite", "MySQL", "C#", ".NET", "Python"]}
 			/>
 			<Divider />
 			<MyWork />

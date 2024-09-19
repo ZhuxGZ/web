@@ -1,6 +1,6 @@
-import { Techs } from '../TechList/TechList';
-import { TechList } from '../TechList/TechList';
-import styles from './TechStack.module.scss';
+import { Techs } from "../TechList/TechList";
+import { TechList } from "../TechList/TechList";
+import styles from "./TechStack.module.scss";
 
 export const TechStack = ({ front, back }: { front: Techs[]; back: Techs[] }) => {
 	return (
