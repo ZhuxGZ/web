@@ -22,7 +22,7 @@ export const MyWork = ({ sx }: { sx?: CSSProperties }) => {
 					role="Front End Developer"
 					company="GM2DEV"
 					date="JUN 2024 - FEB 2024"
-					techs={['TypeScript', 'React', 'GraphQL']}
+					techs={['React', 'TypeScript', 'SASS', 'GraphQL']}
 					description="I was tasked with enhancing applications by incorporating numerous features. My commitment has consistently been to deliver these features with excellent responsiveness, ensuring a seamless and user-friendly experience."
 					tasklist={[
 						"Ensure the project's adaptability by making it responsive across various devices.",
