@@ -1,4 +1,4 @@
-export const LinkedinSvg = (props) => (
+export const LinkedinSvg = (props: any) => (
 	<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 192 192" {...props}>
 		<rect width={132} height={132} x={30} y={30} strokeWidth={12} rx={16} />
 		<path strokeLinecap="round" strokeLinejoin="round" strokeWidth={12} d="M66 86v44" />
