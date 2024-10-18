@@ -27,7 +27,7 @@ export const Project = ({ title, description, techs, github, preview }: ProjectP
 					</Link>
 				)}
 				{preview && (
-					<Link icon href={preview}>
+					<Link icon href={preview} newTab>
 						Preview
 					</Link>
 				)}
