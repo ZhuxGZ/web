@@ -13,7 +13,7 @@ export const MyWork = ({ sx }: { sx?: CSSProperties }) => {
 					techs={["C#", ".NET", "SQL"]}
 					description="Worked with .NET, SQL databases and azure functions to build a data warehouse to store medical data that was needed to made accurate reports for the different areas of the company."
 					tasklist={[
-						"Develop different azure functions to collect data from different API's.",
+						"Develop azure functions to collect data from different API's.",
 						"Identify improvement opportunities.",
 						"Ensure that the reports produced from the data warehouse collection are similar to the reports from the individual sites.",
 					]}
