@@ -4,10 +4,10 @@ import styles from './HeroProfile.module.scss';
 export const HeroProfile = () => {
 	return (
 		<section className={styles.container}>
-			<section className={styles.container__avatar}></section>
-			<section>
-				<section className={styles.container__info}>
-					<section className={styles.container__info__description}>
+			<div className={styles.container__avatar}></div>
+			<div>
+				<div className={styles.container__info}>
+					<div className={styles.container__info__description}>
 						<h2>Hi,</h2>
 						<p>
 							I’m <span>Ignacio</span>, a self-taught developer from Argentina, My passion for
@@ -21,17 +21,17 @@ export const HeroProfile = () => {
 							I believe in the power of continuous learning and adaptability in the ever-evolving
 							world of technology. Each day brings new challenges and opportunities for growth.
 						</p>
-						<section className={styles.container__media}>
+						<div className={styles.container__media}>
 							<a href="https://www.linkedin.com/in/ignacio-berganti%C3%B1os/" target="_blank">
 								<LinkedinSvg className={styles.container__media__linkedin} />
 							</a>
 							<a href="https://github.com/zhuxgz" target="_blank">
 								<GithubSvg className={styles.container__media__github} />
 							</a>
-						</section>
-					</section>
-				</section>
-			</section>
+						</div>
+					</div>
+				</div>
+			</div>
 		</section>
 	);
 };

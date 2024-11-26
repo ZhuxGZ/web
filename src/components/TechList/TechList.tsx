@@ -26,7 +26,7 @@ export type Techs = keyof typeof TECHS;
 
 export const TechList = ({ techs }: { techs: Techs[] }) => {
 	return (
-		<section className={styles.container}>
+		<div className={styles.container}>
 			{techs.map((tech) => {
 				return (
 					<Badge key={tech} fontWeight="bold">
@@ -34,6 +34,6 @@ export const TechList = ({ techs }: { techs: Techs[] }) => {
 					</Badge>
 				);
 			})}
-		</section>
+		</div>
 	);
 };

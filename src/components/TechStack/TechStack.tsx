@@ -6,14 +6,14 @@ export const TechStack = ({ front, back }: { front: Techs[]; back: Techs[] }) =>
 	return (
 		<section className={styles.container}>
 			<h2>Tech Stack</h2>
-			<section>
+			<div>
 				<h3>Front End</h3>
 				<TechList techs={front} />
-			</section>
-			<section className={styles.container__techSection}>
+			</div>
+			<div className={styles.container__techSection}>
 				<h3>Back End</h3>
 				<TechList techs={back} />
-			</section>
+			</div>
 		</section>
 	);
 };

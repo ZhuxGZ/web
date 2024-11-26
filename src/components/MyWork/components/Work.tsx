@@ -13,14 +13,14 @@ interface WorkProps {
 
 export const Work = ({ description, role, company, date, techs, tasklist }: WorkProps) => {
 	return (
-		<section>
-			<section>
+		<div>
+			<div>
 				<h3 className={styles.title}>
 					{role} <span className={styles.dot}>·</span> {company}
 				</h3>
 				<p className={styles.date}>{date}</p>
-			</section>
-			<section>
+			</div>
+			<div>
 				<p>{description}</p>
 				<ul className={styles.list}>
 					{tasklist?.map((task) => {
@@ -31,10 +31,10 @@ export const Work = ({ description, role, company, date, techs, tasklist }: Work
 						);
 					})}
 				</ul>
-			</section>
-			<section className={styles.tech_list}>
+			</div>
+			<div className={styles.tech_list}>
 				<TechList techs={techs} />
-			</section>
-		</section>
+			</div>
+		</div>
 	);
 };

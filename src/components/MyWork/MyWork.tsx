@@ -5,7 +5,7 @@ export const MyWork = ({ sx }: { sx?: CSSProperties }) => {
 	return (
 		<section style={sx}>
 			<h2>My Work</h2>
-			<section>
+			<div>
 				<Work
 					role="Back End Developer"
 					company="GM2DEV"
@@ -30,7 +30,7 @@ export const MyWork = ({ sx }: { sx?: CSSProperties }) => {
 						"Clean up and refactor existing code to prevent the buildup of technical debt.",
 					]}
 				/>
-			</section>
+			</div>
 		</section>
 	);
 };

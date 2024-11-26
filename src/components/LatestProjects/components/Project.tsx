@@ -12,15 +12,15 @@ interface ProjectProps {
 
 export const Project = ({ title, description, techs, github, preview }: ProjectProps) => {
 	return (
-		<section>
-			<section>
+		<div>
+			<div>
 				<h3>{title}</h3>
 				<p>{description}</p>
-			</section>
-			<section>
+			</div>
+			<div>
 				<TechList techs={techs} />
-			</section>
-			<section className={styles.links}>
+			</div>
+			<div className={styles.links}>
 				{github && (
 					<Link icon href={github}>
 						Github
@@ -31,7 +31,7 @@ export const Project = ({ title, description, techs, github, preview }: ProjectP
 						Preview
 					</Link>
 				)}
-			</section>
-		</section>
+			</div>
+		</div>
 	);
 };
