@@ -12,7 +12,7 @@ function App() {
 			<Divider />
 			<MyWork />
 			<Divider />
-			<LatestProjects />
+			{/* <LatestProjects /> */}
 			<Divider />
 		</Layout>
 	);
