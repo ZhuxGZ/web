@@ -1,4 +1,4 @@
-import { HeroProfile, Layout, TechStack, MyWork, Divider, LatestProjects } from "./components";
+import { HeroProfile, Layout, TechStack, WorkExperience, Divider} from "./components";
 
 function App() {
 	return (
@@ -10,9 +10,9 @@ function App() {
 				back={["NodeJS", "SQL", "GraphQL", "SQLite", "MySQL", "C#", ".NET", "Python"]}
 			/>
 			<Divider />
-			<MyWork />
-			<Divider />
-			{/* <LatestProjects /> */}
+			<WorkExperience />
+			{/* <Divider />
+			<LatestProjects /> */}
 			<Divider />
 		</Layout>
 	);

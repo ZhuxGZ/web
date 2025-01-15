@@ -5,7 +5,7 @@ export * from './Button';
 export * from './SVG';
 export * from './Badge';
 export * from './TechList';
-export * from './MyWork';
+export * from './WorkExperience'
 export * from './Link';
 export * from './Divider';
 export * from './LatestProjects';

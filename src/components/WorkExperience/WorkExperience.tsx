@@ -1,10 +1,10 @@
 import { CSSProperties } from "react";
 import { Work } from "./components/Work";
 
-export const MyWork = ({ sx }: { sx?: CSSProperties }) => {
+export const WorkExperience = ({ sx }: { sx?: CSSProperties }) => {
 	return (
 		<section style={sx}>
-			<h2>My Work</h2>
+			<h2>Work Experience</h2>
 			<div>
 				<Work
 					role="Back End Developer"
